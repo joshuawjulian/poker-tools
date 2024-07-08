@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { CardSchema } from './card';
+import { CardSchema } from '../schema/card';
 
 export const PlayerFoldSchema = z.object({
 	seat: z.number(),

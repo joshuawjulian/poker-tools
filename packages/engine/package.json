@@ -1,5 +1,5 @@
 {
-	"name": "@repo/ts-poker-hand",
+	"name": "@repo/engine",
 	"type": "module",
 	"devDependencies": {
 		"@tsconfig/recommended": "^1.0.6",
@@ -8,7 +8,7 @@
 		"vitest": "^1.6.0"
 	},
 	"dependencies": {
-		"zod": "^3.23.8"
+		"zod": "*"
 	},
 	"scripts": {
 		"test": "vitest"

@@ -4,7 +4,7 @@ import { GameStateSchema, GameStateType } from './state';
 
 import readline from 'node:readline';
 import { ZodSchema, z } from 'zod';
-import { CardRankSchema, CardSuitSchema } from './card';
+import { CardRankSchema, CardSuitSchema } from '../schema/card';
 
 export let sixHandedSimple: GameStateType = GameStateSchema.parse({
 	players: [

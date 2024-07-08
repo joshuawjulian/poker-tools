@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { CardSchema } from '../schema/card';
 import {
 	ActionSchema,
 	PlayerBetType,
@@ -8,7 +9,6 @@ import {
 	PokerRounds,
 	isDealerAction,
 } from './action';
-import { CardSchema } from './card';
 import { getWagers } from './engineUtils';
 
 export const OptionsSchema = z.object({

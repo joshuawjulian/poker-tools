@@ -135,5 +135,7 @@ describe('validateState()', () => {
 			{ action: 'river', river: { rank: 'X', suit: 'x' } },
 		],
 	};
-	expect(validateState(state)).toEqual(true);
+	it('should return true for a valid state', () => {
+		expect(validateState(state)).toEqual(true);
+	});
 });

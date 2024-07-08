@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const CardRankSchema = z.union([
+export let CardRankSchema = z.union([
 	z.literal('2'),
 	z.literal('3'),
 	z.literal('4'),
@@ -17,7 +17,7 @@ export const CardRankSchema = z.union([
 	z.literal('X'),
 ]);
 
-export const CardSuitSchema = z.union([
+export let CardSuitSchema = z.union([
 	z.literal('s'),
 	z.literal('h'),
 	z.literal('d'),
@@ -25,7 +25,7 @@ export const CardSuitSchema = z.union([
 	z.literal('x'),
 ]);
 
-export const CardSchema = z.object({
+export let CardSchema = z.object({
 	rank: CardRankSchema,
 	suit: CardSuitSchema,
 });
